@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<opml version="1.0">
+    <head>
+        <title>Sam subscriptions in feedly Cloud</title>
+    </head>
+    <body>
+        <outline text="Politics" title="Politics">
+            <outline type="rss" text="Reuters: Politics" title="Reuters: Politics" xmlUrl="http://feeds.reuters.com/Reuters/PoliticsNews" htmlUrl="http://www.reuters.com"/>
+            <outline type="rss" text="NYT &gt; Politics" title="NYT &gt; Politics" xmlUrl="http://rss.nytimes.com/services/xml/rss/nyt/Politics.xml" htmlUrl="http://www.nytimes.com/pages/politics/index.html?partner=rss&amp;emc=rss"/>
+            <outline type="rss" text="Politico Politics" title="Politico Politics" xmlUrl="http://www.politico.com/rss/politics.xml" htmlUrl="http://www.politico.com/news/politics"/>
+            <outline type="rss" text="Democracy in America" title="Democracy in America" xmlUrl="http://www.economist.com/blogs/democracyinamerica/atom.xml" htmlUrl="http://www.economist.com/blogs/democracyinamerica"/>
+            <outline type="rss" text="FOX News Politics" title="FOX News Politics" xmlUrl="http://feeds.foxnews.com/foxnews/politics" htmlUrl="http://www.foxnews.com/"/>
+            <outline type="rss" text="Drudge Report Feed" title="Drudge Report Feed" xmlUrl="http://drudgereportfeed.com/rss.xml" htmlUrl="http://drudgereportfeed.com/"/>
+            <outline type="rss" text="USATODAY - On Politics" title="USATODAY - On Politics" xmlUrl="http://rssfeeds.usatoday.com/TP-OnPolitics" htmlUrl="http://www.usatoday.com"/>
+            <outline type="rss" text="WashingtonExaminer.com RSS" title="WashingtonExaminer.com RSS" xmlUrl="http://washingtonexaminer.com/rss/politics" htmlUrl="http://www.washingtonexaminer.com"/>
+            <outline type="rss" text="AP Top Political News at 6:08 a.m. EDT" title="AP Top Political News at 6:08 a.m. EDT" xmlUrl="http://hosted.ap.org/lineups/POLITICSHEADS-rss_2.0.xml?SITE=FLMYR&amp;SECTION=HOME" htmlUrl="http://hosted.ap.org/"/>
+            <outline type="rss" text="msnbc.com Latest Headlines" title="msnbc.com Latest Headlines" xmlUrl="http://www.msnbc.com/feeds/latest" htmlUrl="http://www.msnbc.com/"/>
+            <outline type="rss" text="WSJ.com: Politics And Policy" title="WSJ.com: Politics And Policy" xmlUrl="http://online.wsj.com/xml/rss/3_7087.xml" htmlUrl="http://online.wsj.com/news/politics"/>
+            <outline type="rss" text="The Nation » Article" title="The Nation » Article" xmlUrl="http://www.thenation.com/rss/articles" htmlUrl="http://www.thenation.com"/>
+            <outline type="rss" text="CNN.com - Politics" title="CNN.com - Politics" xmlUrl="http://rss.cnn.com/rss/cnn_allpolitics.rss" htmlUrl="http://www.cnn.com/POLITICS/index.html?eref=rss_politics"/>
+            <outline type="rss" text="PBS NewsHour » Topics » Politics" title="PBS NewsHour » Topics » Politics" xmlUrl="http://www.pbs.org/newshour/rss/politics.xml" htmlUrl="http://www.pbs.org/newshour"/>
+            <outline type="rss" text="WaPo Politics" title="WaPo Politics" xmlUrl="http://feeds.washingtonpost.com/rss/politics" htmlUrl="http://www.washingtonpost.com/pb/politics/"/>
+        </outline>
+    </body>
+</opml>
