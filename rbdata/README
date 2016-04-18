@@ -1,0 +1,7 @@
+This data is the training/testing data for the RedBlue project.
+
+It consists of .txt files that are the transcripts from the democratic and republican primary debates in early spring of 2016.
+
+The transcripts themselves need to be updated to be inclusive of the April debates.
+
+Operational phase: Once we get the model working, we'll need to ingest RSS feeds from news sources. 
