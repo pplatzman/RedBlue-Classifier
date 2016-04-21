@@ -18,6 +18,12 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import SVC
 import lxml
 
+## For data exploration
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas.io.sql as pd_sql
+import sqlite3 as sql
 ## CONNECTING TO THE DATASET
 
 CORPUS_ROOT = "/Users/Goodgame/Desktop/Georgetown/RedBlue/rbdata/"
@@ -192,31 +198,31 @@ feature_names.extend(
     features.steps[1][1].transformer_list[1][1].steps[1][1].get_feature_names()
 )
 
-## TOPIC MODELING AND CLUSTERING
+## TOPIC MODELING AND CLUSTERING. MUTED THIS SECTION BECAUSE WE'RE NOT USING CLUSTERING.
 
-N_TOPICS    = 10
-N_TOP_WORDS = 20
-
-def model_topics(model, data, **kwargs):
-    """
-    Automatic topic modeling and elucidation of topic classes.
-    """
-
-    start = time.time()
-    clust = model(**kwargs).fit(data)
-
-    print "Fit {} model in {:0.3f} seconds\n".format(clust.__class__.__name__, time.time()-start)
-    for idx, topic in enumerate(clust.components_):
-        print "  Topic {}:".format(idx)
-        for tdx in topic.argsort()[:-N_TOP_WORDS - 1:-1]:
-            print "    - {}".format(feature_names[tdx])
-        print
-
-model_topics(NMF, data, n_components=N_TOPICS, random_state=1, alpha=.1, l1_ratio=.5)
-
-model_topics(LatentDirichletAllocation, data, n_topics=N_TOPICS, max_iter=5,
-                                learning_method='online', learning_offset=50.,
-                                random_state=0)
+# N_TOPICS    = 10
+# N_TOP_WORDS = 20
+#
+# def model_topics(model, data, **kwargs):
+#     """
+#     Automatic topic modeling and elucidation of topic classes.
+#     """
+#
+#     start = time.time()
+#     clust = model(**kwargs).fit(data)
+#
+#     print "Fit {} model in {:0.3f} seconds\n".format(clust.__class__.__name__, time.time()-start)
+#     for idx, topic in enumerate(clust.components_):
+#         print "  Topic {}:".format(idx)
+#         for tdx in topic.argsort()[:-N_TOP_WORDS - 1:-1]:
+#             print "    - {}".format(feature_names[tdx])
+#         print
+#
+# model_topics(NMF, data, n_components=N_TOPICS, random_state=1, alpha=.1, l1_ratio=.5)
+#
+# model_topics(LatentDirichletAllocation, data, n_topics=N_TOPICS, max_iter=5,
+#                                 learning_method='online', learning_offset=50.,
+#                                 random_state=0)
 
 ## TOPIC IDENTIFICATION
 
@@ -226,3 +232,9 @@ def classify_topics(model, data, **kwargs):
 
     print "Fit {} model in {:0.3f} seconds\n".format(clf.__class__.__name__, time.time()-start)
     classification_report(clf)
+
+## EXPLORING OUR DATA USING PANDAS
+
+print "Our data type is: ", type(data), ".\n\n"
+
+print "Our raw data looks like this:\n\n", data
